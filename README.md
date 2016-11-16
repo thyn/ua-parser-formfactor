@@ -15,8 +15,8 @@ https://www.nuget.org/packages/UAParser.FormFactor/
 
 # Usage
 
-	  var parser = Parser.GetDefault(); //using UAParser
-		var result = parser.Parse(userAgent);
-    Console.WriteLine(result.GetFormFactor());
+	var parser = Parser.GetDefault(); //using UAParser
+	var result = parser.Parse(userAgent);
+	Console.WriteLine(result.GetFormFactor());
 	
 
