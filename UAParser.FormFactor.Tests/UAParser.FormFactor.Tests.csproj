@@ -52,7 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ua-parser-formfactor\UAParser.FormFactor\UAParser.FormFactor.csproj">
+    <ProjectReference Include="..\UAParser.FormFactor\UAParser.FormFactor.csproj">
       <Project>{883ae6e5-e8ce-43cd-a699-b1000a7d0e3f}</Project>
       <Name>UAParser.FormFactor</Name>
     </ProjectReference>

@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UAParser.FormFactor", "UAParser.FormFactor\UAParser.FormFactor.csproj", "{883AE6E5-E8CE-43CD-A699-B1000A7D0E3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UAParser.FormFactor.Tests", "..\UAParser.FormFactor.Tests\UAParser.FormFactor.Tests.csproj", "{441A0857-B071-41D6-97EB-905D32F49868}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UAParser.FormFactor.Tests", "UAParser.FormFactor.Tests\UAParser.FormFactor.Tests.csproj", "{441A0857-B071-41D6-97EB-905D32F49868}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
