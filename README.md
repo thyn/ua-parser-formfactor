@@ -1,14 +1,10 @@
-# HAProxy Api Client
+# UAParser.FormFactor
 
-Simple C# library to control HAProxy over TCP port.
+Small extension for [UAParser](https://www.nuget.org/packages/UAParser) to detect device's form factor by useragent. Based on http://detectmobilebrowsers.com.
 
 # Installation
 
 https://www.nuget.org/packages/UAParser.FormFactor/
-
-# Overview
-
-Small extension for [UAParser](https://www.nuget.org/packages/UAParser) to detect device's form factor by useragent. Based on http://detectmobilebrowsers.com.
 
 # Supported form factors.
 
