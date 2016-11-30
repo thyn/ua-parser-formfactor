@@ -42,8 +42,7 @@ namespace UAParser.FormFactor
 			var isTablet = IsTablet(userAgent);
 			return isTablet ? DeviceFormFactor.Tablet : DeviceFormFactor.Desktop;
 		}
-
-
+		
 		protected virtual bool IsMobile(string ua)
 		{
 			var mobileUserAgentBase = MobileUserAgentBase;

@@ -40,6 +40,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CientInfoWithFormFactor.cs" />
+    <Compile Include="DeviceWithFormFactor.cs" />
     <Compile Include="FormFactorParser.cs" />
     <Compile Include="DeviceType.cs" />
     <Compile Include="IFormFactorParser.cs" />

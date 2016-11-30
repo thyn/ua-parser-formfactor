@@ -19,9 +19,9 @@ namespace UAParser.FormFactor.Tests
 		public void MobileDevices(string userAgent)
 		{
 			var parser = Parser.GetDefault();
-			var result = parser.Parse(userAgent);
+			var result = parser.ParseDeviceWithFormFactor(userAgent);
 
-			Assert.IsTrue(result.GetFormFactor() == DeviceFormFactor.Mobile);
+			Assert.IsTrue(result.FormFactor == DeviceFormFactor.Mobile);
 		}
 
 		[TestCase("Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.85 Safari/537.36")]
@@ -35,9 +35,9 @@ namespace UAParser.FormFactor.Tests
 		public void DesktopDevices(string userAgent)
 		{
 			var parser = Parser.GetDefault();
-			var result = parser.Parse(userAgent);
+			var result = parser.ParseDeviceWithFormFactor(userAgent);
 
-			Assert.IsTrue(result.GetFormFactor() == DeviceFormFactor.Desktop);
+			Assert.IsTrue(result.FormFactor == DeviceFormFactor.Desktop);
 		}
 
 		[TestCase("Mozilla/5.0 (iPad; CPU OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/14A456 Safari/602.1")]
@@ -47,9 +47,9 @@ namespace UAParser.FormFactor.Tests
 		public void TabletDevices(string userAgent)
 		{
 			var parser = Parser.GetDefault();
-			var result = parser.Parse(userAgent);
+			var result = parser.ParseDeviceWithFormFactor(userAgent);
 
-			Assert.IsTrue(result.GetFormFactor() == DeviceFormFactor.Tablet);
+			Assert.IsTrue(result.FormFactor == DeviceFormFactor.Tablet);
 		}
 
 		[TestCase("Googlebot/2.1 (+http://www.google.com/bot.html)")]
@@ -64,9 +64,9 @@ namespace UAParser.FormFactor.Tests
 		public void SpiderDevices(string userAgent)
 		{
 			var parser = Parser.GetDefault();
-			var result = parser.Parse(userAgent);
+			var result = parser.ParseDeviceWithFormFactor(userAgent);
 
-			Assert.IsTrue(result.GetFormFactor() == DeviceFormFactor.Spider);
+			Assert.IsTrue(result.FormFactor == DeviceFormFactor.Spider);
 		}
 	}
 }
