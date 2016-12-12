@@ -5,7 +5,7 @@
 		private readonly ClientInfo _info;
 		public string String => _info.String;
 		public OS OS => _info.OS;
-		private DeviceWithFormFactor Device { get; }
+		public DeviceWithFormFactor Device { get; }
 		public UserAgent UserAgent => _info.UserAgent;
 		public UserAgent UA => _info.UA;
 		public override string ToString()
