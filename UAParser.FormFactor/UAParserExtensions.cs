@@ -11,10 +11,10 @@ namespace UAParser.FormFactor
 				FormFactorParser.GetDefault().GetFormFactor(uaString, device?.IsSpider == true));
 		}
 
-		public static CientInfoWithFormFactor ParseWithFormFactor(this Parser parser, string uaString)
+		public static ClientInfoWithFormFactor ParseWithFormFactor(this Parser parser, string uaString)
 		{
 			var client = parser.Parse(uaString);
-			return new CientInfoWithFormFactor(client,
+			return new ClientInfoWithFormFactor(client,
 				FormFactorParser.GetDefault().GetFormFactor(uaString, client?.Device.IsSpider == true));
 		}
 	}

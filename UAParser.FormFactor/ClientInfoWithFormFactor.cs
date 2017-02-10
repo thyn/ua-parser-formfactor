@@ -1,6 +1,6 @@
 ﻿namespace UAParser.FormFactor
 {
-	public class CientInfoWithFormFactor
+	public class ClientInfoWithFormFactor
 	{
 		private readonly ClientInfo _info;
 		public string String => _info.String;
@@ -13,7 +13,7 @@
 			return string.Format("{0} {1} {2}", (object) this.OS, (object) this.Device, (object) this.UA);
 		}
 
-		public CientInfoWithFormFactor(ClientInfo info, DeviceFormFactor formFactor)
+		public ClientInfoWithFormFactor(ClientInfo info, DeviceFormFactor formFactor)
 		{
 			_info = info;
 			Device = new DeviceWithFormFactor(info.Device, formFactor);
