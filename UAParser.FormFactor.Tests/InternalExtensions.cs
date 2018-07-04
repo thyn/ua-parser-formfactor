@@ -31,7 +31,7 @@ namespace UAParser.FormFactor.Tests
 
 		internal static string GetTestResources(this object self, string name)
 		{
-			using (var s = typeof(TestResourceTests).Assembly.GetManifestResourceStream(name))
+			using (var s = typeof(UserAgentOsResourceTests).Assembly.GetManifestResourceStream(name))
 			{
 				if (s == null)
 				{

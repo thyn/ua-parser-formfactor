@@ -8,46 +8,8 @@ using YamlDotNet.RepresentationModel;
 
 namespace UAParser.FormFactor.Tests
 {
-	[TestFixture]
-	[Parallelizable]
-	public class TestResourceTests
+	public class ResourceTests
 	{
-		[Test]
-		public void CanRunDeviceTests()
-		{
-			RunTests("UAParser.FormFactor.Tests.Resources.test_device.yaml", DeviceYamlTestCase.ReadFromMap);
-		}
-
-		[Test]
-		public void CanRunAdditionalOsTests()
-		{
-			RunTests("UAParser.FormFactor.Tests.Resources.additional_os_tests.yaml", OSYamlTestCase.ReadFromMap);
-		}
-
-		[Test]
-		public void CanRunFirefoxUserAgentStringTests()
-		{
-			RunTests("UAParser.FormFactor.Tests.Resources.firefox_user_agent_strings.yaml", UserAgentYamlTestCase.ReadFromMap);
-		}
-
-		[Test]
-		public void CanRunPgtsBrowserListTests()
-		{
-			RunTests("UAParser.FormFactor.Tests.Resources.pgts_browser_list.yaml", UserAgentYamlTestCase.ReadFromMap);
-		}
-
-		[Test]
-		public void CanRunUserAgentParserTests()
-		{
-			RunTests("UAParser.FormFactor.Tests.Resources.test_ua.yaml", UserAgentYamlTestCase.ReadFromMap);
-		}
-
-		[Test]
-		public void CanRunUserAgentParserOsTests()
-		{
-			RunTests("UAParser.FormFactor.Tests.Resources.test_os.yaml", OSYamlTestCase.ReadFromMap);
-		}
-
 		public void RunTests<TTestCase>(string resourceName, Func<Dictionary<string, string>, TTestCase> testCaseFunction) where TTestCase : YamlTestCase
 		{
 			var testCases = GetTestCases(resourceName, "test_cases", testCaseFunction);
