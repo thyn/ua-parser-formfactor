@@ -1,5 +1,4 @@
-
-
+[![Build status](https://img.shields.io/appveyor/ci/thyn/ua-parser-formfactor.svg)](https://ci.appveyor.com/project/thyn/ua-parser-formfactor) [![AppVeyor tests](https://img.shields.io/appveyor/tests/thyn/ua-parser-formfactor.svg)](https://ci.appveyor.com/project/ci/thyn/ua-parser-formfactor/build/tests) [![NuGet](https://img.shields.io/nuget/vpre/UAParser.FormFactor.svg)](https://www.nuget.org/packages/UAParser.FormFactor/)
 
 # UAParser.FormFactor
 
