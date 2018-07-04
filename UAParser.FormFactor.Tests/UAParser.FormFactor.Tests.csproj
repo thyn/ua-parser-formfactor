@@ -5,9 +5,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\additional_os_tests.yaml" />
+    <None Remove="Resources\firefox_user_agent_strings.yaml" />
+    <None Remove="Resources\pgts_browser_list.yaml" />
+    <None Remove="Resources\test_device.yaml" />
+    <None Remove="Resources\test_os.yaml" />
+    <None Remove="Resources\test_ua.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\additional_os_tests.yaml" />
+    <EmbeddedResource Include="Resources\firefox_user_agent_strings.yaml" />
+    <EmbeddedResource Include="Resources\pgts_browser_list.yaml" />
+    <EmbeddedResource Include="Resources\test_device.yaml" />
+    <EmbeddedResource Include="Resources\test_os.yaml" />
+    <EmbeddedResource Include="Resources\test_ua.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\UAParser.FormFactor\regexes.yaml" Link="Resources\regexes.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
     <PackageReference Include="NUnit" Version="3.10.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+    <PackageReference Include="YamlDotNet" Version="5.0.1" />
   </ItemGroup>
 
   <ItemGroup>

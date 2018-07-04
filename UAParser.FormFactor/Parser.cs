@@ -281,19 +281,34 @@ namespace UAParser.FormFactor
 
 			private static Func<Match, IEnumerator<int>, string> Replace(string replacement)
 			{
-				return replacement != null ? Select(_ => replacement) : Select();
+				if (replacement != null)
+				{
+					return Select(_ => replacement);
+				}
+
+				return Select();
 			}
 
 			private static Func<Match, IEnumerator<int>, string> Replace(string replacement, string token)
 			{
-				return replacement != null && replacement.Contains(token)
-					 ? Select(s => s != null ? replacement.ReplaceFirstOccurence(token, s) : replacement)
-					 : Replace(replacement);
+				if (replacement != null)
+				{
+					if (replacement.Contains(token))
+					{
+						return Select(s => s != null ? replacement.ReplaceFirstOccurence(token, s) : replacement);
+					}
+					else if (replacement.Contains("$"))
+					{
+						return ReplaceAll(replacement);
+					}
+				}
+
+				return Replace(replacement);
 			}
 
 			private static readonly string[] _allReplacementTokens = new string[]
 			{
-				"$1","$2","$3","$4","$5","$6","$7","$8","$91",
+				"$1","$2","$3","$4","$5","$6","$7","$8","$9"
 			};
 
 			private static Func<Match, IEnumerator<int>, string> ReplaceAll(string replacement)
@@ -331,12 +346,14 @@ namespace UAParser.FormFactor
 
 								finalString = ReplaceFunction(finalString, replacementText, token);
 							}
+
 							if (!finalString.Contains("$"))
 							{
 								break;
 							}
 						}
 					}
+
 					return finalString;
 				};
 			}
