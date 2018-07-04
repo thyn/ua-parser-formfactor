@@ -11,7 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{A45DE873
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UAParser.FormFactor", "UAParser.FormFactor\UAParser.FormFactor.csproj", "{E4AA0437-E276-4D4C-B131-D720B76F648E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UAParser.FormFactor.Tests", "UAParser.FormFactor.Tests\UAParser.FormFactor.Tests.csproj", "{6DD717D0-3E82-4FD9-88A8-3BDEA8E02DA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UAParser.FormFactor.Tests", "UAParser.FormFactor.Tests\UAParser.FormFactor.Tests.csproj", "{6DD717D0-3E82-4FD9-88A8-3BDEA8E02DA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{A18B149D-9CD1-4046-8FA8-6621155C09D9}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

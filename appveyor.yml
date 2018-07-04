@@ -1,0 +1,66 @@
+# common configuration
+
+environment:
+  project_version: '2.0.0'
+  project_informational_version: '$(project_version)-alpha'
+  project_version_is_prerelease: true
+
+version: '$(project_version).{build}'
+image: Visual Studio 2017
+skip_tags: true
+
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '$(project_informational_version)'
+  package_version: '$(project_informational_version)'
+  assembly_version: '$(project_version)'
+  file_version: '{version}'
+  informational_version: '$(project_informational_version)'
+
+nuget:
+  disable_publish_on_pr: true
+  project_feed: true
+
+before_build:
+- cmd: dotnet restore
+  
+build:
+  publish_nuget: true
+  verbosity: normal
+
+for:
+
+-
+  branches:
+    only:
+    - production
+
+  configuration: Release
+  
+  deploy:
+  - provider: NuGet
+    api_key:
+      secure: GkOikaFKRyEqmQ1rNvGeLTSrCpgaFooc6fALgb/2md7/xD/0y4s7l7Eu56StgPta
+    skip_symbols: false
+  - provider: GitHub
+    tag: 'v$(project_informational_version)'
+    auth_token:
+      secure: 9F8Uho8Ir0uU1TQUFDOb6MzZTmPr7fnHw4UowLPiNsMtxf/WXb0ODVvjEnsaiaKt
+    prerelease: $(project_version_is_prerelease)
+
+#development configuration (build)
+-
+  branches:
+    only:
+    - master
+
+  environment:
+    project_dev_version: '$(project_informational_version)-dev'
+
+  configuration: Debug
+
+  dotnet_csproj:
+    version: '$(project_dev_version).{build}'
+    package_version: '$(project_dev_version).{build}'
+    informational_version: '$(project_dev_version).{build}'
