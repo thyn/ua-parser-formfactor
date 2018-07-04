@@ -25,12 +25,9 @@ https://www.nuget.org/packages/UAParser.FormFactor/
 
 # Usage
 
-	  using UAParser;
-
-...
+```C#
 
   string uaString = "Mozilla/5.0 (iPhone; CPU iPhone OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3";
-
   // get a parser with the embedded regex patterns
   var uaParser = Parser.GetDefault();
   
@@ -49,4 +46,4 @@ https://www.nuget.org/packages/UAParser.FormFactor/
   Console.WriteLine(c.Device.Family);    // => "iPhone"
   Console.WriteLine(result.Device.FormFactor);  // => Mobile
 	
-
+```
