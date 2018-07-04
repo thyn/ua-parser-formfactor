@@ -8,7 +8,7 @@ A .net wrapper for the ua-parser library with form factors (Mobile,Table,Desktop
 # Changes
 
 
-2018.07.04 Fork UAParser to support .net standart 2.0. Update yaml files. Fix forked tests to support new yaml test files. Remove hell with System.Net.http. Remove custom wrappers for old UAParser library. Supports .Net 4.6.1+
+2018.07.04 Fork UAParser to support .net standart 2.0. Update yaml files. Fix forked tests to support new yaml test files. Remove hell with System.Net.http. Remove custom wrappers for old UAParser library. Supports .Net 4.6.1+, .net core
 
 2017.09.22 new release to support version 3.0.0 of UAParser , built only for 4.5 framework.
 
