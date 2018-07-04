@@ -2,8 +2,8 @@
 
 environment:
   project_version: '2.0.0'
-  project_informational_version: '$(project_version)-alpha'
-  project_version_is_prerelease: true
+  project_informational_version: '$(project_version)'
+  project_version_is_prerelease: false
 
 version: '$(project_version).{build}'
 image: Visual Studio 2017
