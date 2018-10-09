@@ -378,6 +378,13 @@ test_cases:
     patch:
     patch_minor:
 
+  - user_agent_string: 'MacOutlook/16.12.0.180401 (Intelx64 Mac OS X Version 10.12.6 (build 16G29))'
+    family: 'Mac OS X'
+    major: '10'
+    minor: '12'
+    patch: '6'
+    patch_minor:
+
   - user_agent_string: 'Mozilla/5.0 (MeeGo; NokiaN9) AppleWebKit/534.13 (KHTML, like Gecko) NokiaBrowser/8.5.0 Mobile Safari/534.13'
     family: 'MeeGo'
     major:
@@ -2054,6 +2061,41 @@ test_cases:
     patch:
     patch_minor:
 
+  - user_agent_string: 'App/1.0.0 CFNetwork/894 Darwin/17.4.0'
+    family: 'iOS'
+    major: '11'
+    minor: '2'
+    patch: '6'
+    patch_minor:
+
+  - user_agent_string: 'App/1.0.0 CFNetwork/897.15 Darwin/17.5.0'
+    family: 'iOS'
+    major: '11'
+    minor: '3'
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'App/1.0.0 CFNetwork/901.1 Darwin/17.6.0'
+    family: 'iOS'
+    major: '11'
+    minor: '4'
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'App/1.0.0 CFNetwork/902.2 Darwin/17.7.0'
+    family: 'iOS'
+    major: '11'
+    minor: '4'
+    patch: '1'
+    patch_minor:
+
+  - user_agent_string: 'App/1.0.0 CFNetwork/958.1 Darwin/18.0.0'
+    family: 'iOS'
+    major: '12'
+    minor: '0'
+    patch:
+    patch_minor:
+
   - user_agent_string: 'Mozilla/5.0 (iPhone; CPU 7_0_6 like Mac OS X; en_GB) AppleWebKit (KHTML, like Gecko) Mobile [OKMagazine/4.0.1 (iOS/7.0.6)] [LiteApps]'
     family: 'iOS'
     major: '7'
@@ -2216,6 +2258,27 @@ test_cases:
     patch:
     patch_minor:
 
+  - user_agent_string: 'TestApp/1.0 CFNetwork/758.3.15 Darwin/15.4.0'
+    family: 'iOS'
+    major: '9'
+    minor: '3'
+    patch: '1'
+    patch_minor:
+
+  - user_agent_string: 'TestApp/1.0 CFNetwork/758.4.3 Darwin/15.5.0'
+    family: 'iOS'
+    major: '9'
+    minor: '3'
+    patch: '2'
+    patch_minor:
+
+  - user_agent_string: 'TestApp/1.0 CFNetwork/758.5.3 Darwin/15.6.0'
+    family: 'iOS'
+    major: '9'
+    minor: '3'
+    patch: '5'
+    patch_minor:
+
   - user_agent_string: 'TestApp/1.0 CFNetwork/808.0.2 Darwin/16.0.0'
     family: 'iOS'
     major: '10'
@@ -2235,6 +2298,13 @@ test_cases:
     major: '10'
     minor: '2'
     patch:
+    patch_minor:
+
+  - user_agent_string: 'App/1.0.0 CFNetwork/808.3 Darwin/16.3.0'
+    family: 'iOS'
+    major: '10'
+    minor: '2'
+    patch: '1'
     patch_minor:
 
   - user_agent_string: 'TestApp-tvOS/1.0-1'
@@ -2489,14 +2559,14 @@ test_cases:
     minor:
     patch:
     patch_minor:
- 
+
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 7.0; LG-TP260 Build/NRD90U; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 Instagram 33.0.0.11.92 Android (24/7.0; 320dpi; 720x1193; LGE/lge; LG-TP260; lv517; lv517; en_US; 93117667)'
     family: 'Android'
     major: '7'
     minor: '0'
     patch:
     patch_minor:
-    
+
   - user_agent_string: 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 Instagram 33.0.0.11.96 (iPhone9,3; iOS 11_2_5; en_AU; en-AU; scale=2.00; gamut=wide; 750x1334)'
     family: 'iOS'
     major: '11'
@@ -2564,6 +2634,13 @@ test_cases:
     family: 'Android'
     major: '7'
     minor: '0'
+    patch: 
+    patch_minor: 
+
+  - user_agent_string: 'Mozilla/5.0 (Linux; Android 9; Pixel Build/PPP3.180510.008) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.81 Mobile Safari/537.36'
+    family: 'Android'
+    major: '9'
+    minor:
     patch: 
     patch_minor: 
 

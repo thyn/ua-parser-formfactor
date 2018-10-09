@@ -7,7 +7,9 @@
   <ItemGroup>
     <None Remove="Resources\additional_os_tests.yaml" />
     <None Remove="Resources\firefox_user_agent_strings.yaml" />
+    <None Remove="Resources\opera_mini_user_agent_strings.yaml" />
     <None Remove="Resources\pgts_browser_list.yaml" />
+    <None Remove="Resources\podcasting_user_agent_strings.yaml" />
     <None Remove="Resources\test_device.yaml" />
     <None Remove="Resources\test_os.yaml" />
     <None Remove="Resources\test_ua.yaml" />
@@ -16,7 +18,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\additional_os_tests.yaml" />
     <EmbeddedResource Include="Resources\firefox_user_agent_strings.yaml" />
+    <EmbeddedResource Include="Resources\opera_mini_user_agent_strings.yaml" />
     <EmbeddedResource Include="Resources\pgts_browser_list.yaml" />
+    <EmbeddedResource Include="Resources\podcasting_user_agent_strings.yaml" />
     <EmbeddedResource Include="Resources\test_device.yaml" />
     <EmbeddedResource Include="Resources\test_os.yaml" />
     <EmbeddedResource Include="Resources\test_ua.yaml" />
