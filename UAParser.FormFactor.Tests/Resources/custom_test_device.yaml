@@ -1,0 +1,57 @@
+test_cases:
+
+  - user_agent_string: 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    family: 'Windows'
+    major: '8'
+    minor: '1'
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    family: 'Windows'
+    major: '8'
+    minor: '1'
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36'
+    family: 'Windows'
+    major: '8'
+    minor: '1'
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    family: 'Windows'
+    major: '8'
+    minor: '1'
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko'
+    family: 'Windows'
+    major: '8'
+    minor: '1'
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    family: 'Windows'
+    major: '8'
+    minor: '1'
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    family: 'Windows'
+    major: '8'
+    minor: '1'
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    family: 'Windows'
+    major: '8'
+    minor: '1'
+    patch:
+    patch_minor:
