@@ -5,9 +5,11 @@ namespace UAParser.FormFactor.Models
 	/// </summary>
 	public enum DeviceFormFactor
 	{
+		Unknown = -1,
 		Mobile,
 		Tablet,
 		Desktop,
-		Spider
+		Spider,
+		TvOrConsole
 	}
 }
