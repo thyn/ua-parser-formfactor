@@ -41,7 +41,7 @@ for:
   deploy:
   - provider: NuGet
     api_key:
-      secure: GkOikaFKRyEqmQ1rNvGeLTSrCpgaFooc6fALgb/2md7/xD/0y4s7l7Eu56StgPta
+      secure: AjuAoTW1aeNJE9hlLbZafvXoiT83LOqjevO9DuTJS9oZdvp3QN7mCEFP9Dqysuyl
     skip_symbols: false
   - provider: GitHub
     tag: 'v$(project_informational_version)'
