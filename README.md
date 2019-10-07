@@ -56,7 +56,7 @@ https://www.nuget.org/packages/UAParser.FormFactor/
 1. Mobile
 
 ```
-(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino
+(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|\btizen\b.+?\bmobile\b
 ```
 then
 ```
@@ -72,7 +72,7 @@ android|ipad|playbook|silk|tablet
 3. TvOrConsole
 
 ```
-smart[- ]?tv|apple ?tv|googletv|android tv|opera tv|dtvnetbrowser|sonycebrowser|bravia 4k|netflix|pov_tv-hdmi-200bt| dlnadoc\/|hbbtv|tv safari|roku\/dvp|nsz-gs7\/gx70|crkey| aftm | aftt | gtv100|nintendobrowser
+smart[- ]?tv|apple\s?tv|googletv|android tv|opera tv|dtvnetbrowser|sonycebrowser|bravia 4k|netflix|pov_tv-hdmi-200bt| dlnadoc\/|hbbtv|tv safari|roku\/dvp|nsz-gs7\/gx70|crkey| aftm | aftt | gtv100|nintendobrowser|playstation
 ```
 
 4. Desktop
