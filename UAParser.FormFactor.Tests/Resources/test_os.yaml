@@ -139,6 +139,20 @@ test_cases:
     minor: '4'
     patch: '2'
     patch_minor:
+  
+  - user_agent_string: 'Mozilla/5.0 (Linux; Android 9; motorola one power) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Mobile Safari/537.36'
+    family: 'Android'
+    major: '9'
+    minor: 
+    patch: 
+    patch_minor:
+  
+  - user_agent_string: 'Mozilla/5.0 (Linux; Android 10; SM-G970F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3396.81 Mobile Safari/537.36'
+    family: 'Android'
+    major: '10'
+    minor: 
+    patch: 
+    patch_minor:
 
   - user_agent_string: 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500/S8500XXJEE; U; Bada/1.0; nl-nl) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B'
     family: 'Bada'
@@ -249,6 +263,27 @@ test_cases:
     family: 'Firefox OS'
     major:
     minor:
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Mozilla/5.0 (Mobile; rv:37.0) Gecko/37.0 Firefox/37.0 KaiOS/1.0'
+    family: 'KaiOS'
+    major: '1'
+    minor: '0'
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Mozilla/5.0 (Mobile; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1'
+    family: 'KaiOS'
+    major: '2'
+    minor: '5'
+    patch: '1'
+    patch_minor:
+
+  - user_agent_string: 'Mozilla/5.0 (Mobile; rv:68.0) KAIOS/3.0'
+    family: 'KaiOS'
+    major: '3'
+    minor: '0'
     patch:
     patch_minor:
 
@@ -2679,6 +2714,27 @@ test_cases:
     patch:
     patch_minor:
 
+  - user_agent_string: 'ibm-cos-sdk-java/2.3.0 Linux/4.9.0-8-amd64 Java_HotSpot(TM)_64-Bit_Server_VM/9.0.4+11/9.0.4'
+    family: 'Linux'
+    major: '4'
+    minor: '9'
+    patch: '0'
+    patch_minor:
+
+  - user_agent_string: 'aws-sdk-dotnet-45/3.3.11.0 aws-sdk-dotnet-core/3.3.17.10 .NET_Runtime/4.0 .NET_Framework/4.0 OS/Microsoft_Windows_NT_6.2.9200.0 ClientSync'
+    family: 'Windows'
+    major:
+    minor:
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'rusoto/0.36.0 rust/1.35.0 linux'
+    family: 'Linux'
+    major:
+    minor:
+    patch:
+    patch_minor:
+
   - user_agent_string: 'SalesforceMobileSDK/5.3.0 android mobile/8.0.0 (SM-G955F) Salesforce1/15.2 Native uid_c4589f605fad8c7e ftr_ Cordova/6.2.3'
     family: 'Android'
     major: '8'
@@ -2808,6 +2864,20 @@ test_cases:
   - user_agent_string: 'Mozilla/5.0 (Windows 2000; U) Opera 7.0 [en]'
     family: 'Windows'
     major: '2000'
+    minor:
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Mozilla/5.0 (compatible;AspiegelBot)'
+    family: 'Other'
+    major:
+    minor:
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; AspiegelBot)'
+    family: 'Other'
+    major:
     minor:
     patch:
     patch_minor:
